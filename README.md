@@ -1,5 +1,8 @@
 # EduraShop
 .NET Core 5 ile küçük bir çalışma
 
-## 🗃️  Kullanılan Özellikler  🗃️
-#### *Basic Payload
+## Kullanılan Özellikler
+#### *View Component
+#### *Auto Mapper
+#### *Dependency Injection
+#### *Çom Katmanlı Mimari
