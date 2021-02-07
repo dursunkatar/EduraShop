@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- METAS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- TITLE -->
+    <title>Edura - Multipurpose Website Template</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="~/images/favicon.png" />
+
+    <!-- LOAD MAIN CSS -->
+    <link href="~/style.css" rel="stylesheet" type="text/css">
+
+    <!-- LOAD COLOR STYLE (OPTONAL) CSS -->
+    <link href="~/styles/lunar.css" rel="stylesheet" type="text/css" id="colorstyle">
+
+    <!-- LOAD CUSTOM CSS -->
+    <link href="~/custom.css" rel="stylesheet" type="text/css">
+
+    <!-- LOAD DEMO CSS -->
+    <link href="~/demo/demo.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <!-- WRAPPER START -->
+    <div id="wrapper">
+        <!-- HEADER START -->
+        @await Component.InvokeAsync("Header")
+        <!-- HEADER END -->
+        <!-- PAGE TITLE START -->
+        <section id="title" class="container-fluid wow fadeInDown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h1>Shop <small>Catalog</small></h1>
+                    </div>
+                    <div class="col-xs-6 text-right breadcrumbs">
+                        <ul class="list-inline list-unstyled">
+                            <li><a href="index-2.html">Home</a></li>
+                            <li>/</li>
+                            <li>Shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PAGE TITLE END -->
+        <!-- CONTENT START -->
+        <section id="content">
+            <section id="shop" class="container">
+                <div class="row">
+                    <!-- main column start -->
+                    @RenderBody()
+                    <!-- main column end -->
+                </div>
+            </section>
+        </section>
+        <!-- CONTENT END -->
+        <!-- FOOTER START -->
+        @await Component.InvokeAsync("Footer")
+        <!-- FOOTER END -->
+    </div>
+    <!-- WRAPPER END -->
+    <!-- back to top button -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+    <!-- MAIN JS FILES REQUIRED ON ALL PAGES -->
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/vendor/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="~/vendor/wow/wow.min.js"></script>
+    <script src="~/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="~/vendor/SmoothScroll/SmoothScroll.min.js"></script>
+    <script src="~/vendor/waypoints/waypoints.min.js"></script>
+    <script src="~/vendor/counterup/jquery.counterup.min.js"></script>
+
+    <!-- HERO SLIDER-->
+    <script src="~/vendor/hero-slider/js/modernizr.js"></script>
+    <script src="~/vendor/hero-slider/js/main.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="~/vendor/owl-carousel/owl.carousel.js"></script>
+
+    <!-- FILTERIZR -->
+    <script src="~/vendor/jquery/jquery.filterizr.js"></script>
+
+    <!-- EDURA JS REQUIRED ON ALL PAGES-->
+    <script src="~/edura.js"></script>
+
+    <!-- STYLE SWITCHER -->
+    <script src="~/demo/demo.js"></script>
+    <div id="styleswitcher">
+        <input id="settings-btn" class="settings-btn" type="checkbox">
+        <label for="settings-btn" class="settings-box-element"><i class="fa fa-2x fa-gear"></i></label>
+        <div class="buttons-wrapper settings-box-element">
+            <h4 class="text-uppercase">Change Color Style</h4>
+            <p><button id="demo-lunar" class="btn demo-btn demo-lunar">Lunar (Default)</button></p>
+            <p><button id="demo-blue" class="btn demo-btn demo-blue">Blue</button></p>
+            <p><button id="demo-green" class="btn demo-btn demo-green">Green</button></p>
+            <p><button id="demo-red" class="btn demo-btn demo-red">Red</button></p>
+            <p><button id="demo-orange" class="btn demo-btn demo-orange">Orange</button></p>
+        </div>
+    </div>
+
+</body>
+</html>
