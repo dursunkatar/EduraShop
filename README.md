@@ -6,3 +6,4 @@
 #### *Auto Mapper
 #### *Dependency Injection
 #### *Çom Katmanlı Mimari
+#### *Entity Framework Core Code First
